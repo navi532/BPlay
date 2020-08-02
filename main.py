@@ -4,7 +4,7 @@ import argparse
 import cv2
 import time
 import pyautogui
-from control_commands import MasterControl
+from bplay.control_commands import MasterControl
 
 pyautogui.FailSafeException=False
 
