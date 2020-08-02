@@ -1,0 +1,4 @@
+opencv-python >= 4.2.0
+imutils >=0.5.3
+pyautogui >=0.9.50
+numpy >=1.19.0
