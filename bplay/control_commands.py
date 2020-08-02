@@ -1,6 +1,6 @@
 import pyautogui
 import numpy as np
-from control_window_frame import Window
+from bplay.control_window_frame import Window
 import cv2
 
 class MasterControl(Window):
@@ -36,7 +36,6 @@ class MasterControl(Window):
 		if np.abs(self.Dy) > int(self.Radius *(1 - self.senstivity)):
 			diry= "Jump" if np.sign(self.Dy) == -1 else "Dodge"
 
-		
 		if dirx=="" and diry=="" :
 			self.command= "Steady"
 
@@ -58,7 +57,7 @@ class MasterControl(Window):
 
 			if key==ord('m'):
 				self.enableMask=not self.enableMask
-			
+
 			if key==ord('+') and not self.setROI:
 				self.Radius+=self.steps
 
@@ -68,7 +67,7 @@ class MasterControl(Window):
 
 			if key==ord('t'):
 				self.enableTrackbar=not self.enableTrackbar
-			
+
 				if self.enableTrackbar:
 					self.createTrackbar()
 

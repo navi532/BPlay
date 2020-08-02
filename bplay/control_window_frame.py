@@ -80,19 +80,19 @@ class Window:
 		cv2.imshow(self.myFrame,self.mask)
 
 	def showROI(self):
-	
+
 
 		cv2.putText(self.frame, "Set Region of Action", (10, 30), cv2.FONT_HERSHEY_SIMPLEX,0.65, (0, 0, 0), 2)
 		center , _ =self.findROI()
-		
+
 		if center is not None:
 			cv2.circle(self.frame,center,3,(0,0,255),-1)
 			cv2.circle(self.frame,center,self.Radius,(0,0,255),1)
-			
+
 		self.Center=center#Fixed my region
 		cv2.imshow(self.myFrame,self.frame)
 
-    
+
 	def resetSettings(self):
 		self.enableMask= False
 		self.enableTrackbar= False
@@ -107,21 +107,20 @@ class Window:
 
 		elif self.enableMask:
 			self.showMask()
-		
+
 		elif self.setROI:
 			center , _ =self.findROI()
-		
+
 			if center is not None:
 				cv2.circle(self.frame,center,3,(0,0,255),-1)
-				
-			
+
 			cv2.putText(self.frame,self.command, (10, 30), cv2.FONT_HERSHEY_SIMPLEX,0.65, (0, 0, 0), 3)
 			cv2	.putText(self.frame, f"Change in x: {self.Dx}		Change in y: {self.Dy}",(10, self.frame.shape[0] - 10), cv2.FONT_HERSHEY_SIMPLEX,0.35, (0, 0, 0), 3)
-			
+
 			cv2.circle(self.frame,self.Center,self.Radius,(0,255,0),1)
-			
+
 			cv2.imshow(self.myFrame,self.frame)
-		
+
 		else:
 			self.showROI()
 
