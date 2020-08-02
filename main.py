@@ -12,7 +12,7 @@ pyautogui.FailSafeException=False
 def main():
 
 	parser=argparse.ArgumentParser()
-	parser.add_argument('-f', '--filter', required=True,help='Range filter. RGB or HSV')
+	parser.add_argument('-f', '--filter', default="HSV",help='Range filter. RGB or HSV')
 	parser.add_argument('-w','--webcam',type=int,default=0,required=False,help='Input number for Video Source')
 	args=vars(parser.parse_args())
 
@@ -22,7 +22,7 @@ def main():
 	vs=VideoStream(src=args["webcam"]).start()
 	time.sleep(2)
 
-	X_Frame=MasterControl('Bplay',args["filter"],lwr=(44,47,144),upr=(70,216,255))
+	X_Frame=MasterControl('Bplay',args["filter"],lwr=(0,0,0),upr=(255,255,255))
 
 	while True:
 		frame=vs.read()
