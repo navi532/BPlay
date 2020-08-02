@@ -49,13 +49,13 @@ Please note you might have to use `python3 main.py` based on your configurations
 
 2. Then run `python main.py` and press `t`.
 
-   > You will now see binary mask on of your webcam feed and a slider window to adjust HSV values.
+   - You will now see binary mask on of your webcam feed and a slider window to adjust HSV values.
    
-   > Adjust the HSV values using the slider such that only the object on your collar is of white color and rest of the frame is black as shown below.
+   - Adjust the HSV values using the slider such that only the object on your collar is of white color and rest of the frame is black as shown below.
    
-   > Press `t` again. Now a red circle will be fixed on your collar.
+   - Press `t` again. Now a red circle will be fixed on your collar.
    
-   > It should look like this: ![](https://github.com/navi532/BPlay/blob/master/image1.png)
+   - It should look like this: ![](https://github.com/navi532/BPlay/blob/master/image1.png)
 
 3. Press `s` to set the position of the circle. This will be a reference of your movement.
 
