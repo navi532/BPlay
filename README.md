@@ -61,9 +61,9 @@ Please note you might have to use `python3 main.py` based on your configurations
 
 4. Now, go to this [link](https://www.kiloo.com/subway-surfers/) to test it out. Make sure you are in the web browser window.
 
- > After the game stars try moving the centre which is the object to outside the circle in different directions. Based on your quadrant you will give virtual keypress of `up`, `down`, `left` or `right`.
+   - After the game stars try moving the centre which is the object to outside the circle in different directions. Based on your quadrant you will give virtual keypress of `up`, `down`, `left` or `right`.
 
- > Enjoy the game and have fun !!!
+   - Enjoy the game and have fun !!!
 
 5. Press `q` to exit.
 
