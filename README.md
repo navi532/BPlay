@@ -1,7 +1,8 @@
 # BPlay
 
 
-This project is aimed at giving input to the computer using webcam feed. It sends virtual keypresses of arrow keys based on user movement.
+This project is aimed at giving input to the computer using webcam feed. It sends virtual key-presses of arrow keys based on user movement.  
+It is a very fun game and includes exercising.
 
 ---------------
 
